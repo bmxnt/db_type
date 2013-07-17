@@ -5,7 +5,7 @@ class DB_Type_Pgsql_Array extends DB_Type_Abstract_Container
     public function output($value)
     {
         if ($value === null) {
-            return 'array[]';
+            return '{}';
         }
     	if (!is_array($value)) {
             throw new DB_Type_Exception_Common($this, "output", "PHP-array or null", $value);
@@ -20,7 +20,7 @@ class DB_Type_Pgsql_Array extends DB_Type_Abstract_Container
                 $parts[] = (($this->_item instanceof self)? $inner : addcslashes($inner, "\"\\"));
             }
         }
-        return 'array[' . join(",", $parts) . ']';
+        return '{' . join(",", $parts) . '}';
     }
 
     protected function _parseInput($str, &$p, $for='')

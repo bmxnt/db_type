@@ -1,25 +1,29 @@
 {
-	"name": "SiteSoft/db_type",
-	"type": "library",
-	"description": "Conversion of complex PostgreSQL types (ARRAY, ROW, HSTORE) to PHP and vice versa",
-	"keywords": ["postgresql","plpgsql"],
-	"authors": [
-		{
-			"name": "Dmitry Koterov",
-			"email": "dmitry.koterov@gmail.com",
-			"homepage": "http://dklab.ru"
-		},
-		{
-			"name": "SiteSoft",
-			"homepage": "https://github.com/SiteSoft"
-		}
-	],
-	"require": {
-		"php": ">=5.2.0"
-	},
-	"autoload": {
-		"psr-0": {
-			"DB": "lib"
-		}
-	}
+    "name": "SiteSoft/db_type",
+    "type": "library",
+    "description": "Conversion of complex PostgreSQL types (ARRAY, ROW, HSTORE) to PHP and vice versa",
+    "keywords": ["postgresql", "plpgsql"],
+    "authors": [
+        {
+            "name": "Dmitry Koterov",
+            "email": "dmitry.koterov@gmail.com",
+            "homepage": "http://dklab.ru"
+        },
+        {
+            "name": "nehxby",
+            "homepage": "https://github.com/nehxby"
+        },
+        {
+            "name": "SiteSoft",
+            "homepage": "https://github.com/SiteSoft"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "DB": "lib"
+        }
+    }
 }
