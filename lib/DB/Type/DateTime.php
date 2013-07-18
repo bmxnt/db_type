@@ -60,6 +60,10 @@ class DB_Type_DateTime extends DB_Type_Abstract_Primitive
      */
     public function input($native, $for = '')
     {
+        if(null === $native){
+            return null;
+        }
+
         $dateTime = $native instanceof \DateTime ? $native : new DateTime($native, $this->getTimezone());
 
         return $dateTime->format($this->getFormat());
@@ -90,6 +94,10 @@ class DB_Type_DateTime extends DB_Type_Abstract_Primitive
      */
     public function output($value)
     {
+        if(null === $value){
+            return null;
+        }
+
         $dateTime = new DateTime($value, $this->getTimezone());
 
         return $dateTime->format($this->getFormat());
