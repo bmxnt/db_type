@@ -1,5 +1,5 @@
 <?php
-class DB_Type_Int extends DB_Type_Numeric
+class DB_Type_BigInt extends DB_Type_Numeric
 {
 	public function output($value)
 	{
