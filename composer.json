@@ -1,5 +1,5 @@
 {
-    "name": "SiteSoft/db_type",
+    "name": "bmxnt/db_type",
     "type": "library",
     "description": "Conversion of complex PostgreSQL types (ARRAY, ROW, HSTORE) to PHP and vice versa",
     "keywords": ["postgresql", "plpgsql"],
@@ -16,6 +16,10 @@
         {
             "name": "SiteSoft",
             "homepage": "https://github.com/SiteSoft"
+        },
+        {
+            "name": "bmxnt",
+            "homepage": "https://github.com/bmxnt"
         }
     ],
     "require": {
